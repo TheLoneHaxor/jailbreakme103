@@ -5,9 +5,9 @@ for (let i in {xx: 0}) {
     o[i]; <<-------- (a)
 }
 
-When the code generator meets (a), it will call BytecodeGenerator::emitGetByVal.
+// When the code generator meets (a), it will call BytecodeGenerator::emitGetByVal.
 
-Here's the code of BytecodeGenerator::emitGetByVal.
+// Here's the code of BytecodeGenerator::emitGetByVal.
 
 RegisterID* BytecodeGenerator::emitGetByVal(RegisterID* dst, RegisterID* base, RegisterID* property)
 {
